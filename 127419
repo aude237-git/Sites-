@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulaire</title>
+</head>
+<body>
+    <style>
+    header{
+        text-align: center;
+
+    }
+    img{
+        border-radius: 939px;
+        margin: 11px 600px;
+    }
+    body{
+        background-color: rgb(211, 248, 236);
+    }
+    .club{
+        display: flex;
+    }
+    h1{
+        text-align: center;
+        text-decoration: underline;
+        
+    }
+    form{
+        background-color: rgb(224, 215, 250);
+        width: 630px;
+        height: auto;
+        margin: 50px 400px;
+        padding: 40px;
+        border: 1px solid;
+        border-radius: 22px;
+    }
+    label{
+        display: block;
+        margin: 14PX;
+        margin-bottom: 3px;
+        text-align: left;
+        text-decoration: underline;
+    }
+    P{
+        margin: 20PX;
+        border-color: chartreuse;
+        color: rgb(22, 27, 22);
+        font-style: italic;
+    }
+    .sexe{
+        display: flex;
+    }
+    input{
+        margin: 10px;
+        border-radius: 7px;
+        width: 313PX;
+        height: 25px;
+
+        margin-bottom: 2PX;
+    }
+    textarea{
+        border-radius: 13px;
+        width: 12px;
+    }
+    button{
+        margin: 0 120px;
+        border-radius: 12px;
+        cursor: pointer;
+        margin-right: 10px;
+        border-color: black;
+        padding: 10px 15px;
+    }
+    .reset{
+        background-color: rgb(224, 27, 27);
+        border-radius: 30px;
+    }
+    #r{
+        width: 543px;
+    }
+    .submit{
+        background-color: chartreuse;
+        border-radius: 30px;
+    }
+    .radio{
+        cursor: pointer;
+    }
+    </style>
+    <header>
+        <h1>FORMULAIRE D'INSCRIPTION</h1>
+    </header>    
+       <form action="#" method="post">
+        <label for="Nom">Nom:</label>
+        <input type="text" id="Nom" name="Nom" required >
+        <label for="">Prenom:</label>
+        <input type="text" required>
+
+        <label for="">Nationalite:</label>
+        <input type="text" required>
+
+        <label for="">Age:</label>
+        <input type="text" required>
+        <label for="">Ville</label>
+        <input type="text" required>
+        <section class="sexe">
+         <label for="">sexe:</label>
+            <label for="">H</label>
+             <input type="radio" class="radio" required>
+
+            <label for="">F</label>
+            <input type="radio" class="radio" required><br>
+        </section>
+        <select name="preferance" id="preferance">
+            <option value="">Preferance</option>
+            <option value="PORSCHE">PORSCHE</option>
+            <option value="Mc laren">Mc laren</option>
+            <option value="mercedes">mercedes</option>
+            <option value="lambo-urus">lambo-urus</option>
+
+        </select><br><br>
+        <select name="Naissance" id="">
+            <option value="">Naissance</option>
+            <option value="">2000</option>
+            <option value="">2001</option>
+            <option value="">2002</option>
+            <option value="">2003</option>
+            <option value="">2004</option>
+            <option value="">2005</option>
+            <option value="">2006</option>
+            <option value="">2007</option>
+            <option value="">2008</option>
+            <option value="">2009</option>
+        
+        </select><br><br>
+        <select name="artiste" id="">
+            <Option>Artiste</Option>
+            <option value="">himra</option>
+            <option value="">didi b</option>
+            <option value="">dadju</option>
+            <option value="">bad nova</option>
+            <option value="">lady ponce</option>
+        </select>
+        <section class="club">
+        <label for="club">Barca</label>
+        <input type="radio" class="radio" required>
+
+        <label for="">Real</label>
+        <input type="radio" class="radio">
+        </section>
+        <label for="">Tel:</label>
+        <input type="text" required>
+        <label for="">Email:</label>
+        <input type="text" required>
+        <label for="">Demande:</label>
+        <textarea name="" id="r" cols="25" rows="7" required></textarea>
+        <p>NB: rendez_vous au bureau de PORSCHE STATION muni de votre cv et de votre piece d'identite des demain </p>
+        <button type="submit" class="submit">ok</button>
+        <button type="reset" class="reset">annuler</button>
+    </form>
+</body>
+</html>

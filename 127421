@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>site</title>
+</head>
+<body>
+    <style>
+        body ul{
+            display: flex;
+            text-indent: 50px;
+            
+            
+        }
+        body{
+            background-image: url("IMG-20250506-WA0030.jpg");
+        }
+        
+    </style>
+    <header>
+        <ul>
+            <nav><a href="form.html"><button>forulaire</button></a></nav>
+            <nav><a href="pont.html"><button>pont blanc</button></a></nav>
+            <nav><a href="cv.html"></a><button>cv</button></nav>
+            <nav><a href="index.html"><button>index</button></a></nav>
+    </ul>
+    </header>
+    
+</body>
+</html>

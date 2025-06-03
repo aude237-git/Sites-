@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - NIKEU NKAMNANG Aude Eloïcha</title>
+    <style>
+        :root {
+            --primary: #4F46E5;
+            --secondary: #6366F1;
+            --dark: #1F2937;
+            --light: #F9FAFB;
+            --accent: #10B981;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F3F4F6;
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 40px;
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        
+        header {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 30px;
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 20px;
+        }
+        
+        .photo-container {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 3px solid var(--primary);
+            flex-shrink: 0;
+        }
+        
+        .photo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .header-content {
+            flex-grow: 1;
+        }
+        
+        h1 {
+            color: var(--primary);
+            margin: 0;
+            font-size: 28px;
+            font-weight: 700;
+        }
+        
+        h2 {
+            color: var(--primary);
+            font-size: 20px;
+            margin-top: 25px;
+            border-left: 4px solid var(--primary);
+            padding-left: 10px;
+        }
+        
+        .subtitle {
+            color: var(--secondary);
+            font-weight: 500;
+            margin: 5px 0;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 10px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        section {
+            margin-bottom: 25px;
+        }
+        
+        ul {
+            padding-left: 20px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+            position: relative;
+        }
+        
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        
+        .skill {
+            background-color: #E0E7FF;
+            color: var(--primary);
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+                margin: 20px;
+            }
+            
+            header {
+                flex-direction: column;
+                text-align: center;
+                gap: 15px;
+            }
+            
+            .photo-container {
+                margin: 0 auto;
+            }
+            
+            .contact-info {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <!-- Remplacez "chemin/vers/ma-photo.jpg" par votre photo -->
+            <div class="photo-container">
+                <img src="profil.jpg" alt="Photo de profil" class="photo">
+            </div>
+            <div class="header-content">
+                <h1>NIKEU NKAMNANG Aude Eloïcha</h1>
+                <div class="subtitle">Développeuse Back-End Junior</div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        Douala, Cameroun
+                    </div>
+                    <div class="contact-item">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        <a href="mailto:audeeloichanikeu@gmail.com">audeeloichanikeu@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section>
+            <h2>Profil</h2>
+            <p>
+                Développeuse back-end débutante, passionnée par la programmation et la création de solutions techniques fiables. 
+                En formation continue, je développe mes compétences dans la conception de fonctionnalités côté serveur, 
+                la logique de programmation et les bases du développement web. Sérieuse, motivée, et en quête de premières 
+                expériences professionnelles (stage ou mission freelance).
+            </p>
+        </section>
+
+        <section>
+            <h2>Formation</h2>
+            <ul>
+                <li>
+                    <strong>Baccalauréat série D</strong> -Lycée de nylon Brazzaville - Douala, Cameroun<br>
+                    <em>Obtenu</em>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Compétences techniques visées </h2>
+            <div class="skills">
+                <span class="skill">Développement Back-End</span>
+                <span class="skill">Logique de programmation</span>
+                <span class="skill">Bases de données</span>
+                <span class="skill">API</span>
+                <span class="skill">Résolution de problèmes</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>Langues</h2>
+            <ul>
+                <li><strong>Français</strong> : Courant</li>
+                <li><strong>Anglais</strong> : Notions de base</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Objectif Professionnel</h2>
+            <p>
+                Intégrer un stage, une formation professionnelle ou une mission de développement web back-end 
+                pour mettre en pratique mes connaissances et acquérir de l'expérience dans un environnement professionnel.
+            </p>
+        </section>
+        <h2><a href="index.html" rel="noopener noreferrer">consulter mon portefolio </a></h2>
+    </div>
+</body>
+</html>
